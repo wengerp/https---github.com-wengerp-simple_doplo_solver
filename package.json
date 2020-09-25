@@ -1,0 +1,22 @@
+{
+  "name": "simple_doplo_solver",
+  "version": "1.0.0",
+  "description": "A simple doplo slver based on a heuristic search algorithm. Can solve up to 6x6 ridles.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wengerp/depthFirstSearch.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wengerp/depthFirstSearch/issues"
+  },
+  "homepage": "https://github.com/wengerp/depthFirstSearch#readme",
+  "dependencies": {
+    "lodash": "^4.17.20"
+  }
+}
