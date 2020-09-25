@@ -1,4 +1,4 @@
-var hs = require('./heuristicSearch');
+var hs = require('./index.js');
 
 //var aTask = [12, 2, 15, 2, 9, 12, 0, 5, 0, 4, 7, 8, 15, 4];  // No 109 
 //var aTask = [6, 10, 4, 5, 6, 0, 6, 2, 1, 5, 9, 1];  // 9:51  // 7:40 // 7:32  // 7:12  // 6.50  // 13 Sek.
