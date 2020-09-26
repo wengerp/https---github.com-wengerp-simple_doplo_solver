@@ -1,6 +1,6 @@
 {
-  "name": "simple_doplo_solver",
-  "version": "1.0.0",
+  "name": "@wengerp/simple_doplo_solver",
+  "version": "1.0.1",
   "description": "A simple doplo slver based on a heuristic search algorithm. Can solve up to 6x6 ridles.",
   "main": "index.js",
   "scripts": {
@@ -8,15 +8,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wengerp/https---github.com-wengerp-simple_doplo_solver"
+    "url": "git+https://github.com/wengerp/https---github.com-wengerp-simple_doplo_solver.git"
   },
   "author": "Patrick Wenger",
   "license": "ISC",
-  "bugs": {
-    "url": ""
-  },
   "homepage": "https://github.com/wengerp/https---github.com-wengerp-simple_doplo_solver",
   "dependencies": {
     "lodash": "^4.17.20"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "doplo",
+    "ridle",
+    "backtracking",
+    "heuristic",
+    "search"
+  ],
+  "bugs": {
+    "url": "https://github.com/wengerp/https---github.com-wengerp-simple_doplo_solver/issues"
   }
 }

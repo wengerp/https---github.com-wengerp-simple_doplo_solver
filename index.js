@@ -381,5 +381,5 @@ const getPermutations = arr => {
 
 module.exports.search = hs;
 
-console.log("This is heuristicSearch - a classic backtracking search algorithm.");
+console.log("This is simple_doplo_solver. It is based on a classic backtracking search algorithm.");
 console.log(`Node version: ${process.versions.node}`);
