@@ -1,7 +1,7 @@
 {
   "name": "@wengerp/simple_doplo_solver",
   "version": "1.0.1",
-  "description": "A simple doplo slver based on a heuristic search algorithm. Can solve up to 6x6 ridles.",
+  "description": "A simple doplo solver",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
