@@ -231,13 +231,17 @@ class HeuristicSearchNode {
     }
 };
 
-const hs = (solution,logFrequency) => {
+const pr = (solution) => {
     var size = solution.length/2
     var searchSet = new SearchSet(size);
     var hsnode = new HeuristicSearchNode(searchSet, size, solution);
+    return hsnode;
+};
+
+const hs = (startnode,logFrequency) => {
     var result = [];
     console.time('HeuristicSearch');
-    result = HeuristicSearchAlg(hsnode,logFrequency);
+    result = HeuristicSearchAlg(startnode,logFrequency);
     console.timeEnd('HeuristicSearch');
     return result;
 }
@@ -380,6 +384,7 @@ const getPermutations = arr => {
 };
 
 module.exports.search = hs;
+module.exports.prepare = pr;
 
 console.log("This is simple_doplo_solver. It is based on a classic backtracking search algorithm.");
 console.log(`Node version: ${process.versions.node}`);
