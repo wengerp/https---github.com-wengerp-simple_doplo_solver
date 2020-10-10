@@ -1,0 +1,33 @@
+language ESSENCE' 1.0
+
+given size : int
+letting solvals be domain int(0..size-2)
+letting csize be domain int(1..size)
+letting convals be domain int(0..( sum convalsul : int(1..size-2) . convalsul ))
+given crows : matrix indexed by [csize] of convals
+given ccols : matrix indexed by [csize] of convals
+
+find  solution: matrix indexed by [csize, csize] of solvals
+
+such that
+     
+  forAll row : int(csize) .
+     alldifferent_except(solution[row,..],0),
+  forAll col : int(csize) .
+     alldifferent_except(solution[..,col],0),
+
+   forAll row2 : int(csize) .
+     gcc(solution[row2,..],[0],[2]),
+   forAll col2 : int(csize) .
+     gcc(solution[..,col2],[0],[2]),
+
+forAll ii : int(1..size-1) .
+   forAll row3 : int(csize) .
+     forAll i : int(1..size-ii) .
+       ( solution[row3,i] = 0 /\ solution[row3,i+ii] = 0 ) -> ( crows[row3] = (sum betweenrow : int(i..i+ii-1) . solution[row3,betweenrow]) ),
+       
+ forAll jj : int(1..size-1) .
+   forAll col3 : int(csize) .
+     forAll j : int(1..size-jj) .
+       ( solution[j,col3] = 0 /\ solution[j+jj,col3] = 0 ) -> ( ccols[col3] = (sum betweencol : int(j..j+jj-1) . solution[betweencol,col3]) )
+
