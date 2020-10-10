@@ -1,5 +1,7 @@
-# A simple Doplo Solver.
+# A simple Doplo Solver
 A search algorithm for solving doplo  ridles (https://www.doplo.ch/) using a heuristic backtracking algorithm. If it is run on  standard hardware it is capable to solve up to 6x6 ridles. 7x7 ridles might taking hours and hours... 
+## NEWS
+I added a new CSP-based variation of the doplo solver to the repository. It is based on Essence 1.0, a language to describe problems as Constraint Satisfaction Problems (CSP). This approach is very strong. And since I used Saville Row (https://savilerow.cs.st-andrews.ac.uk) as environement it is possible to transform CSP-Problems to SAT instances. So called Satisfiability Problems deal with the NP = P Problem and therefore with the hardest problems to find solutions for. SAT-Solvers are incredibly mature software tools and are capable of solving 8x8 instances of Doplos in under a second. It might be possible to solve 9x9 instances. However, I don't know of any 9x9 instance to test this problem. If anybody happens to know of any 9x9 instances I would be interested.
 ## API
 ```
 (HeuristicNode) startnode prepare((Int Array)restrictionsarray)
