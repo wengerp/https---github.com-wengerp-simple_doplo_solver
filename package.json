@@ -1,6 +1,6 @@
 {
   "name": "@wengerp/simple_doplo_solver",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A simple doplo solver",
   "main": "index.js",
   "scripts": {
